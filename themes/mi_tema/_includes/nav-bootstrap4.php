@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light   ">
+<a class="navbar-brand ml-5 tittle__logo scale-in-left  " href="index.html">TAHAROA</a>
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
-		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Navbar</a>
+		<!-- <a class="navbar-brand" href="<?php bloginfo('url') ?>"></a> -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
