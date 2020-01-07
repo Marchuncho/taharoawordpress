@@ -49,7 +49,7 @@ function dl_enqueue_style() {
 		wp_enqueue_style( 'fontawesome' );
 	}
 
-	wp_enqueue_style( 'main_style' );
+	//wp_enqueue_style( 'main_style' );
   wp_enqueue_style( 'mystyle' );
 
 }

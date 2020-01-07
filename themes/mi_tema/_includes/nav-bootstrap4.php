@@ -7,13 +7,13 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
 		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
 			<?php wp_nav_menu( array(
 				'theme_location'	=> 'header-menu',
 				'depth'				=> 2,
 				'container'			=> false,
-				'menu_class'		=> 'navbar-nav mr-auto',
+				'menu_class'		=> 'navbar-nav ml-auto mr-5',
 				'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
 				'walker'			=> new WP_Bootstrap_Navwalker(),
 			) ); ?>
