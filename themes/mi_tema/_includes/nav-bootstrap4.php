@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light   ">
-<a class="navbar-brand ml-5 tittle__logo scale-in-left  " href="index.html">TAHAROA</a>
+<a class="navbar-brand ml-5 tittle__logo scale-in-left  " href="inicio">TAHAROA</a>
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<!-- <a class="navbar-brand" href="<?php bloginfo('url') ?>"></a> -->

@@ -31,7 +31,7 @@
   </div>
 
   <div class="About__button container">
-  <a href="about.html" target="_blank"> <button class="button2"  type="button " name="button">Ir a nuestra historia</button></a>
+  <a href="Nosotras"> <button class="button2"  type="button " name="button">Ir a nuestra historia</button></a>
   </div>
 </article>
 
@@ -39,22 +39,44 @@
   <h2>Nuestras Instructoras</h2>
 <div class=" container">
   <div class="card-deck pt-3 pb-3 Instructora__sizeCard ">
-<div class="card ">
-  <img src="<?php echo get_theme_file_uri(); ?> /assets/images/solecard2.jpg" class="card-img-top " alt="...">
-
-  <div class="card-body">
-    <h5 class="card-title text-center">Soledad</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-  </div>s
-  <div class="card-footer text-center">
-      <a href="instructoras.html"><button class="button3" type="button" name="button">Visita mi perfil</button> </a>
-  </div>
-  </div>
+    <div class="row">
+    <?php $arg = array(
+     'post_type'     => 'post',
+     'category_name'   => '',
+     'posts_per_page' => -1,
+     'orderby' => 'rand'
 
 
+     );
+
+     $get_arg = new WP_Query( $arg );
+
+     while ( $get_arg->have_posts() ) {
+     $get_arg->the_post();
+     ?>
+
+     <!-- Content -->
+
+       <div class="card ">
+     <?php the_post_thumbnail();?>
+
+     <div class="card-body">
+       <h5 class="card-title text-center"><?php the_title() ?></h5>
+       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     </div>s
+     <div class="card-footer text-center">
+         <a href="Instructora"><button class="button3" type="button" name="button">Visita mi perfil</button> </a>
+     </div>
+     </div>
 
 
+
+     <?php } wp_reset_postdata(); ?>
+ </div>
 </div>
+
+
+
 </div>
 </section>
 
@@ -62,34 +84,29 @@
   <div class="container py-5">
     <h3>GALERIA FOTOGRAFICA</h3>
     <div class="row py-3">
-      <div class="col-md-4 PhotographyGalery__presentaciones ">
 
-        <img src="<?php echo get_theme_file_uri(); ?> /assets/images/pareja.jpg" alt="">
-      </div>
-      <div class="col-md-4 PhotographyGalery__presentaciones">
+        <?php $arg = array(
+         'post_type'     => 'galeria',
+         'category_name'   => '',
+         'posts_per_page' => -1,
+         'offset'     => 0,
+         'orderby' => 'rand'
+         );
 
-        <img src="<?php echo get_theme_file_uri(); ?> /assets/images/baile.jpg" alt="">
-      </div>
-      <div class="col-md-4 PhotographyGalery__presentaciones">
+         $get_arg = new WP_Query( $arg );
 
-        <img src="<?php echo get_theme_file_uri(); ?> /assets/images/chicas.jpg" alt="">
-      </div>
+         while ( $get_arg->have_posts() ) {
+         $get_arg->the_post();
+         ?>
+
+         <!-- Content -->
+         <div class="col-md-4 PhotographyGalery__presentaciones py-2 ">
+
+           <?php the_post_thumbnail();?>
+         </div>
+         <?php } wp_reset_postdata(); ?>
     </div>
-    <div class="row py-3">
-      <div class="col-md-4 PhotographyGalery__presentaciones">
-
-        <img src="<?php echo get_theme_file_uri(); ?> /assets/images/chicas2.jpg" alt="">
-      </div>
-      <div class="col-md-4 PhotographyGalery__presentaciones">
-
-        <img src="<?php echo get_theme_file_uri(); ?> /assets/images/chicas3.jpg" alt="">
-      </div>
-      <div class="col-md-4 PhotographyGalery__presentaciones">
-
-        <img src="<?php echo get_theme_file_uri(); ?> /assets/images/baile.jpg" alt="">
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="cursos text-center py-5">
