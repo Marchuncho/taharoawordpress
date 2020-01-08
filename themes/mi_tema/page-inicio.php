@@ -100,10 +100,39 @@
          ?>
 
          <!-- Content -->
+
          <div class="col-md-4 PhotographyGalery__presentaciones py-2 ">
 
            <?php the_post_thumbnail();?>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-<?php the_ID();?>">
+             Launch demo modal
+           </button>
          </div>
+         <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modal-<?php the_ID();?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title-<?php the_ID();?></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
          <?php } wp_reset_postdata(); ?>
     </div>
     </div>
@@ -133,7 +162,7 @@
 
 <div class="form__contacto ">
   <h6>¿Quieres Aprender? Escribenos y disfruta</h6>
-  <a href="Contacto.html"> <button class="button1 " type="button" name="button">  Contactanos</button></a>
+  <a href="contacto"> <button class="button1 " type="button" name="button">  Contactanos</button></a>
 </div>
 
 </section>

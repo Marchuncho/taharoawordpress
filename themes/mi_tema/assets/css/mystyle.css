@@ -9986,4 +9986,18 @@ iframe {
   font-weight: bold;
   font-size: 18px;
   }
+  .buttonError{
+    color: black;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .boton{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 /*# sourceMappingURL=main.css.map */
