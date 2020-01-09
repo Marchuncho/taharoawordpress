@@ -52,7 +52,13 @@
    </div>
 
 </section>
+<section class="form">
 
+<div class="form__contacto ">
+  <?php get_template_part('_includes/contac', 'info') ?>
+</div>
+
+</section>
 
 
 <?php get_footer() ?>

@@ -7,7 +7,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
 			<?php wp_nav_menu( array(
 				'theme_location'	=> 'header-menu',

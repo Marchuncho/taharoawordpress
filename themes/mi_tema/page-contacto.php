@@ -85,7 +85,7 @@
   <section class="form">
 
   <div class="form__contacto ">
-    <a href="contacto"> <button class="button1 " type="button" name="button">  Contactanos</button></a>
+    <?php get_template_part('_includes/contac', 'info') ?>
   </div>
 
   </section>
