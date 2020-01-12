@@ -35,7 +35,7 @@ function Perfil_post_type() {
 		'label'                 => __( 'Pefil', 'text_domain' ),
 		'description'           => __( 'Perfil  fotografica', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
