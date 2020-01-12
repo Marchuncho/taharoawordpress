@@ -9857,19 +9857,21 @@ nav {
 }
 
 .cursos {
-  height: 40rem;
+  height: auto;
 }
 .cursos__imgs img {
-  border-radius: 25%;
-  height: 15rem;
+  border-radius: 10%;
+  height: auto;
 }
 .cursos__contents {
-  background: yellow;
-  height: 15rem;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+.cursos__button {
+  padding-top: 3rem;
 }
 
 .About {
@@ -9980,6 +9982,15 @@ iframe {
   padding-right: 1rem;
 }
 
+.buttonclases {
+  color: #121619;
+  font-size: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .nav-link{
   color: #fff!important;
   font-family: Playfair display!important;
@@ -9999,5 +10010,6 @@ iframe {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
   }
 /*# sourceMappingURL=main.css.map */

@@ -47,16 +47,16 @@
       </div>
       <div class="container">
       <div class="row py-4 text-center">
-      <div class="col-md-3 courses__galery">
+      <div class="col-md-3 courses__galery py-2">
         <img src="<?php echo get_theme_file_uri(); ?> /assets/images/clase2.jpg" alt="">
       </div>
-      <div class="col-md-3 courses__galery">
+      <div class="col-md-3 courses__galery py-2">
         <img src="<?php echo get_theme_file_uri(); ?> /assets/images/clase2.jpg" alt="">
       </div>
-      <div class="col-md-3 courses__galery">
+      <div class="col-md-3 courses__galery py-2">
           <img src="<?php echo get_theme_file_uri(); ?> /assets/images/clase3.jpg" alt="">
       </div>
-      <div class="col-md-3 courses__galery">
+      <div class="col-md-3 courses__galery py-2">
           <img src="<?php echo get_theme_file_uri(); ?> /assets/images/clase2.jpg" alt="">
       </div>
     </div>

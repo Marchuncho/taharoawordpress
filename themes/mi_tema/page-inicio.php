@@ -27,7 +27,7 @@
 <article class="About">
   <div class="container">
     <h1 class="scale-in-left">TAHAROA   Nuestra Historia</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Taharoa, es un grupo que se crea el año 1999, con la finalidad de dar a conocer la música y danza de la cultura Chilena “Rapanui”, de la Isla de Pascua, perteneciente a la a la V Región de Valparaíso, como una agrupación folclórica con el objetivo de desarrollar muestras de la cultura, trajes, baile, música, costumbres e historia, en la Región de Santiago, como muestra de la danza tradicional folclórica chilena, así dar a conocer y proteger la cultura Rapanui...</p>
   </div>
 
   <div class="About__button container">
@@ -101,37 +101,11 @@
 
          <!-- Content -->
 
-         <div class="col-md-4 PhotographyGalery__presentaciones py-2 ">
+         <div class="col-md-4 PhotographyGalery__presentaciones py-2">
 
            <?php the_post_thumbnail();?>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-<?php the_ID();?>">
-             Launch demo modal
-           </button>
+
          </div>
-         <!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="Modal-<?php the_ID();?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title-<?php the_ID();?></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
          <?php } wp_reset_postdata(); ?>
     </div>
@@ -148,17 +122,22 @@
               <img src="<?php echo get_theme_file_uri(); ?> /assets/images/ensayo.jpg" alt="" class="img-fluid">
           </div>
 
-          <div class="col-md-6">
-            <div class="cursos__contents">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <div class="col-md-6 py-3">
+            <div class="cursos__contents ">
+                  <p>Si te gusta Bailar y divertirte
+                    Si tocas guitarra y quieres compartir
+                    tocas percusion o ukelele
+                    Animate grupo Taharoa musica danza y rapa nui busca nuevos integrantes. </p>
             </div>
           </div>
-
+      </div>
+      <div class="cursos__button pt-5">
+    <a href="Clases">  <button class="buttonclases" type="button" name="button">Nuestras clases</button></a>
       </div>
     </div>
 </section>
 
-<section class="form">
+<section class="form py-4">
 
 <div class="form__contacto ">
   <?php get_template_part('_includes/contac', 'info') ?>
