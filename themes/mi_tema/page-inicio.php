@@ -5,7 +5,7 @@
 <article class="About">
   <div class="container">
     <h1 class="scale-in-left">TAHAROA   Nuestra Historia</h1>
-        <p>Taharoa, es un grupo que se crea el año 1999, con la finalidad de dar a conocer la música y danza de la cultura Chilena “Rapanui”, de la Isla de Pascua, perteneciente a la a la V Región de Valparaíso, como una agrupación folclórica con el objetivo de desarrollar muestras de la cultura, trajes, baile, música, costumbres e historia, en la Región de Santiago, como muestra de la danza tradicional folclórica chilena, así dar a conocer y proteger la cultura Rapanui...</p>
+        <p>Taharoa, es un grupo que se crea el año 1999, con la finalidad de dar a conocer la música y danza de la cultura Chilena “Rapanui”, de la Isla de Pascua, perteneciente a la a la V Región de Valparaíso, como una agrupación folclórica con el objetivo de desarrollar muestras de la cultura, trajes, baile, música, costumbres e historia, en la Región de Santiago, como muestra de la danza tradicional folclórica chilena, así dar a conocer y proteger la cultura Rapanui</p>
   </div>
 
   <div class="About__button container">
