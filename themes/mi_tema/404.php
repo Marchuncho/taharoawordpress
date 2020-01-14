@@ -28,13 +28,13 @@
 
   <div class="boton">
 
-  <a href="inicio"> <button class="buttonError " type="button" name="button">Volver al inicio</button></a>
+  <a class="buttonError" href="inicio"> >Volver al inicio</a>
   </div>
   <section class="form">
 
   <div class="form__contacto ">
     <h6>¿Quieres Aprender? Escribenos y disfruta</h6>
-    <a href="contacto"> <button class="button1 " type="button" name="button">  Contactanos</button></a>
+    <a class="button1 " href="contacto"> Contactanos</a>
   </div>
 
   </section>

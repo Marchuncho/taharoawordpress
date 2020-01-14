@@ -9862,6 +9862,7 @@ nav {
 .cursos__imgs img {
   border-radius: 10%;
   height: auto;
+  max-width: 100%;
 }
 .cursos__contents {
   height: auto;
@@ -10015,5 +10016,8 @@ iframe {
 
   .img-fluid{
     width: 100%;
+  }
+  .lista{
+    color: #fff!important;
   }
 /*# sourceMappingURL=main.css.map */

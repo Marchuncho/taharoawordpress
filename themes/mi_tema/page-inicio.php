@@ -9,7 +9,8 @@
   </div>
 
   <div class="About__button container">
-  <a href="Nosotras"> <button class="button2"  type="button " name="button">Ir a nuestra historia</button></a>
+  <a class="button2" href="<?php echo get_the_permalink( $post = 8, $leavename = false );?>"> Ir a nuestra historia</a>
+
   </div>
 </article>
 
@@ -40,15 +41,12 @@
 
      <div class="card-body">
        <h5 class="card-title text-center"><?php the_title() ?></h5>
-       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-     </div>s
+       <p <?php the_content() ?></p>
+     </div>
      <div class="card-footer text-center">
-         <a href="Instructora"><button class="button3" type="button" name="button">Visita mi perfil</button> </a>
+         <a class="button3" href="<?php echo get_the_permalink( $post = 10, $leavename = false );?>">Visita mi perfil </a>
      </div>
      </div>
-
-
-
      <?php } wp_reset_postdata(); ?>
  </div>
 </div>
@@ -90,29 +88,43 @@
     </div>
 </section>
 
-<section class="cursos text-center py-5">
-  <h4>Nuestras clases</h4>
 
-    <div class="container my-5">
-      <div class="row">
+      <?php $arg = array(
+        'post_type'     => 'Aprender',
+        'category_name'   => '',
+        'posts_per_page' => -1
+      );
 
-          <div class="col-md-6 cursos__imgs">
-              <img src="<?php echo get_theme_file_uri(); ?> /assets/images/ensayo.jpg" alt="" class="img-fluid">
+        $get_arg = new WP_Query( $arg );
+
+        while ( $get_arg->have_posts() ) {
+          $get_arg->the_post();
+          ?>
+
+          <section class="cursos text-center py-5">
+
+            <div class="container my-3">
+                    <h4><?php the_title() ?></h4>
+              <div class="row">
+
+          <div class="col-md-6 cursos__imgs ">
+            <?php the_post_thumbnail() ?>
           </div>
 
-          <div class="col-md-6 py-3">
+          <div class="col-md-6 ">
             <div class="cursos__contents ">
-                  <p>Si te gusta Bailar y divertirte
-                    Si tocas guitarra y quieres compartir
-                    tocas percusion o ukelele
-                    Animate grupo Taharoa musica danza y rapa nui busca nuevos integrantes. </p>
+              <p><?php the_content() ?> </p>
             </div>
           </div>
+            <?php } wp_reset_postdata(); ?>
+        </div>
+
+        <div class="cursos__button pt-5">
+          <a  class="buttonclases" href="<?php echo get_the_permalink( $post = 12, $leavename = false );?>">Nuestras clases</a>
+        </div>
       </div>
-      <div class="cursos__button pt-5">
-    <a href="Clases">  <button class="buttonclases" type="button" name="button">Nuestras clases</button></a>
-      </div>
-    </div>
+
+
 </section>
 
 <section class="form py-4">
